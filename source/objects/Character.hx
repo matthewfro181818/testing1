@@ -7,6 +7,11 @@ import flixel.util.FlxDestroyUtil;
 
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
+import openfl.display.Sprite;
+import openfl.display.MovieClip;
+
+import swf.exporters.animate.AnimateLibrary;
+
 import haxe.Json;
 
 import backend.Song;
