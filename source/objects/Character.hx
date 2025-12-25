@@ -81,6 +81,20 @@ class Character extends FlxSprite
 	public var originalFlipX:Bool = false;
 	public var editorIsPlayer:Null<Bool> = null;
 
+	var swfChar:SwfCharacter;
+
+function loadSwfCharacter(path:String)
+{
+    AnimateLibrary.loadFromFile(path).onComplete(function(lib)
+    {
+        if (swfChar != null && swfChar.parent != null)
+            removeChild(swfChar);
+
+        swfChar = new SwfCharacter(lib);
+        addChild(swfChar);
+    });
+}
+
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -91,15 +105,47 @@ class Character extends FlxSprite
 		this.isPlayer = isPlayer;
 		changeCharacter(character);
 		
-		switch(curCharacter)
-		{
-			case 'pico-speaker':
-				skipDance = true;
-				loadMappedAnims();
-				playAnim("shoot1");
-			case 'pico-blazin', 'darnell-blazin':
-				skipDance = true;
-		}
+switch (curCharacter)
+{
+    case 'bf-crud':
+        skipDance = true;
+        loadSwfCharacter("mods/images/characters/crud_bf.zip");
+        swfChar.play("idle");
+
+    case 'dave-crud-white':
+        skipDance = true;
+        loadSwfCharacter("mods/images/characters/crud_dave.zip");
+        swfChar.play("daveidle");
+
+    case 'dave-crud':
+        skipDance = true;
+        loadSwfCharacter("mods/images/characters/crud_dave.zip");
+        swfChar.play("idle_pissed");
+
+    case 'gary':
+        skipDance = true;
+        loadSwfCharacter("mods/images/characters/gary.zip");
+        swfChar.play("garyidle");
+
+    case 'jeff-good':
+        skipDance = true;
+        loadSwfCharacter("mods/characters/jeff.zip");
+        swfChar.play("niceidle");
+
+    case 'jeff':
+        skipDance = true;
+        loadSwfCharacter("mods/images/characters/jeff.zip");
+        swfChar.play("jeff_idle");
+
+    // existing hardcoded characters
+    case 'pico-speaker':
+        skipDance = true;
+        loadMappedAnims();
+        playAnim("shoot1");
+
+    case 'pico-blazin', 'darnell-blazin':
+        skipDance = true;
+}
 	}
 
 	public function changeCharacter(character:String)
