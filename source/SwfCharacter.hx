@@ -10,7 +10,6 @@ class SwfCharacter extends Sprite
     public var library:AnimateLibrary;
     public var current:MovieClip;
     public var currentSymbol:String;
-	private var symbolsByClassName:Map<String>;
 
     public function new(lib:AnimateLibrary)
     {
@@ -39,6 +38,6 @@ class SwfCharacter extends Sprite
 
     public function listSymbols():Array<String>
     {
-        return symbolsByClassName;
+        return currentSymbol;
     }
 }
