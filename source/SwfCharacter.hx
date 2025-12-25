@@ -35,9 +35,4 @@ class SwfCharacter extends Sprite
         current.gotoAndPlay(1);
         addChild(current);
     }
-
-    public function listSymbols():Array<String>
-    {
-        return currentSymbol;
-    }
 }
