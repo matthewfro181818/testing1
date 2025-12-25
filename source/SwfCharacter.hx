@@ -38,6 +38,6 @@ class SwfCharacter extends Sprite
 
     public function listSymbols():Array<String>
     {
-        return library.symbols.keys();
+        return library.getSymbolNames();
     }
 }
