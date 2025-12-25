@@ -93,10 +93,10 @@ function loadSwfCharacter(path:String)
     AnimateLibrary.loadFromFile(path).onComplete(function(lib)
     {
         if (swfChar != null && swfChar.parent != null)
-            removeChild(swfChar);
+            remove(swfChar);
 
         swfChar = new SwfCharacter(lib);
-        addChild(swfChar);
+        add(swfChar);
     });
 }
 
