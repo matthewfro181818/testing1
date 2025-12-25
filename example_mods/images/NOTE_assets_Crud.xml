@@ -1,1 +1,21 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="NOTE_assets_Crud.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="arrowLEFT0000" x="84" y="0" width="40" height="42" frameX="1" frameY="2" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="purple0000" x="0" y="40" width="40" height="42" frameX="1" frameY="2" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="arrowDOWN0000" x="0" y="82" width="42" height="40" frameX="2" frameY="1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="blue0000" x="0" y="0" width="42" height="40" frameX="2" frameY="1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="arrowUP0000" x="42" y="0" width="42" height="40" frameX="2" frameY="1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="green0000" x="42" y="82" width="42" height="40" frameX="2" frameY="1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="arrowRIGHT0000" x="40" y="40" width="40" height="42" frameX="1" frameY="2" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="red0000" x="124" y="0" width="40" height="42" frameX="1" frameY="2" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="left hold piece0000" x="124" y="42" width="16" height="14" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="left hold end0000" x="140" y="42" width="16" height="13" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="down hold piece0000" x="124" y="42" width="16" height="14" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="down hold end0000" x="140" y="42" width="16" height="13" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="up hold piece0000" x="124" y="42" width="16" height="14" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="up hold end0000" x="140" y="42" width="16" height="13" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="right hold piece0000" x="124" y="42" width="16" height="14" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+	<SubTexture name="right hold end0000" x="140" y="42" width="16" height="13" frameX="2" frameY="2" frameWidth="12" frameHeight="10"/>
+</TextureAtlas>
